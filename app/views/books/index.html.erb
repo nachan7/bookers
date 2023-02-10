@@ -1,8 +1,7 @@
-<%= flash[:notice] %>
+   <%= flash[:notice] %>
+    <h1>Books</h1>
 
-<h1>Books</h1>
-
-<table>
+  <table>
   <thead>
     <tr>
       <th>Title</th>
@@ -34,7 +33,7 @@
   </ul>
 <% end %>
 
-<%= form_with model: @book, url: '/books', menthod: :post do |f| %>
+<%= form_with model: @book do |f| %>
 
 <h4>Title</h4>
 <%= f.text_field :title %>
